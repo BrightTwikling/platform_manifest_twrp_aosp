@@ -129,4 +129,8 @@
 
     <!-- LAST: Remove unused projects for minimal manifest -->
     <include name="remove-minimal.xml"/>
+
+    <!-- Add Axion repositories -->
+    <include name="axion.xml" />
+
 </manifest>
