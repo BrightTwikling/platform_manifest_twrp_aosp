@@ -78,7 +78,7 @@
     <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="twrp-16.0" revision="twrp-16.0"/>
-    <project path="system/extras" name="android_system_extras" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/extras" name="android_system_extras" remote="LineageOS" revision="lineage-23.2"/>
     <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="system/keymaster" name="android_system_keymaster" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="twrp-16.0" revision="twrp-16.0"/>
