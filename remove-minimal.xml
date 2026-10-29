@@ -553,7 +553,6 @@
     <remove-project name="platform/prebuilts/ndk" />
     <remove-project name="platform/prebuilts/qemu-kernel" />
     <remove-project name="platform/prebuilts/remoteexecution-client" />
-    <remove-project name="platform/prebuilts/runtime" />
     <remove-project name="platform/prebuilts/r8" />
 
     <remove-project path="system/bpf" />
