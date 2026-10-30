@@ -179,7 +179,6 @@
     <remove-project path="external/javapoet" />
     <remove-project path="external/javasqlite" />
     <remove-project path="external/javassist" />
-    <remove-project path="external/jemalloc_new" />
     <remove-project path="external/jetpack-camera-app" />
     <remove-project path="external/jimfs" />
     <remove-project path="external/jline" />
