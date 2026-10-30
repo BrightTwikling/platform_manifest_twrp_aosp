@@ -8,6 +8,7 @@
   <remove-project name="android_external_sqlite" />
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_hardware_interfaces" />
+  <remove-project name="android_system_libhidl" />
   <remove-project name="android_system_sepolicy" />
 
   <!-- Add projects -->
@@ -15,6 +16,7 @@
   <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="axion" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="axion" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk,sysui-studio" remote="axion" />
+  <project path="system/libhidl" name="android_system_libhidl" groups="pdk,sysui-studio" remote="axion" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="axion" />
 
 </manifest>
