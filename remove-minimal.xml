@@ -362,7 +362,6 @@
     <remove-project path="frameworks/ex" />
     <remove-project path="frameworks/layoutlib" />
     <remove-project path="frameworks/libs/systemui" />
-    <remove-project path="frameworks/libs/native_bridge_support" />
     <remove-project path="frameworks/libs/service_entitlement" />
     <remove-project path="frameworks/minikin" />
     <remove-project path="frameworks/multidex" />
