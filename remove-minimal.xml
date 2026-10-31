@@ -496,7 +496,6 @@
     <remove-project path="packages/modules/Nfc" />
     <remove-project path="packages/modules/ThreadNetwork" />
     <remove-project path="packages/modules/vndk" />
-    <remove-project path="packages/modules/Virtualization" />
 
     <remove-project path="packages/providers/BlockedNumberProvider" />
     <remove-project path="packages/providers/BookmarkProvider" />

@@ -30,6 +30,7 @@
     <remove-project name="platform/frameworks/base" />
     <remove-project name="platform/frameworks/hardware/interfaces" />
     <remove-project name="platform/hardware/interfaces"/>
+    <remove-project name="platform/packages/modules/Virtualization" />
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/extras"/>
     <remove-project name="platform/system/hardware/interfaces"/>
@@ -124,6 +125,8 @@
 
     <!-- Include common QCOM AIDL bootctrl HAL -->
     <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="LineageOS" revision="lineage-23.2-caf" />
+
+    <project path="packages/modules/Virtualization" name="android_packages_modules_Virtualization" remote="LineageOS" revision="lineage-23.2" />
 
     <!-- LAST: Remove unused projects for minimal manifest -->
     <include name="remove-minimal.xml"/>
