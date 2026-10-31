@@ -11,6 +11,7 @@
   <remove-project name="android_system_libhidl" />
   <remove-project name="platform/system/memory/libmeminfo" />
   <remove-project name="android_system_sepolicy" />
+  <remove-project name="android_system_vold" />
 
   <!-- Add projects -->
   <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="axion" />
@@ -20,5 +21,6 @@
   <project path="system/libhidl" name="android_system_libhidl" groups="pdk,sysui-studio" remote="axion" />
   <project path="system/memory/libmeminfo" name="android_system_memory_libmeminfo" groups="pdk" remote="axion" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="axion" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="axion" />
 
 </manifest>
