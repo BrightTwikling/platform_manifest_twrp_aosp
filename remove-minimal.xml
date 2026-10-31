@@ -555,7 +555,6 @@
     <remove-project path="system/bpfprogs" />
     <remove-project path="system/connectivity/wificond" />
     <remove-project path="system/libsysprop" />
-    <remove-project path="system/liburingutils" />
     <remove-project path="system/media" />
     <remove-project path="system/nvram" />
     <remove-project path="system/testing/gtest_extras" />
