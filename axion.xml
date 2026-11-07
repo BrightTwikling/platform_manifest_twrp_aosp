@@ -4,12 +4,14 @@
   <remote name="axion" fetch="https://github.com/AxionAOSP/" revision="refs/heads/lineage-23.2" />
 
   <!-- Remove projects -->
+  <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_system_libhidl" />
   <remove-project name="platform/system/memory/libmeminfo" />
   <remove-project name="android_system_sepolicy" />
 
   <!-- Add projects -->
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="axion" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="axion" />
   <project path="system/libhidl" name="android_system_libhidl" groups="pdk,sysui-studio" remote="axion" />
   <project path="system/memory/libmeminfo" name="android_system_memory_libmeminfo" groups="pdk" remote="axion" />
