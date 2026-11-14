@@ -533,7 +533,6 @@
     <remove-project name="platform/prebuilts/ktlint" />
     <remove-project name="platform/prebuilts/manifest-merger" />
     <remove-project name="platform/prebuilts/maven_repo/bumptech" />
-    <remove-project name="platform/prebuilts/module_sdk/art" />
     <remove-project name="platform/prebuilts/module_sdk/conscrypt" />
     <remove-project name="platform/prebuilts/module_sdk/Connectivity" />
     <remove-project name="platform/prebuilts/module_sdk/IPsec" />
