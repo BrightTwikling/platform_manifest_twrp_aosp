@@ -378,7 +378,6 @@
     <remove-project path="frameworks/opt/timezonepicker" />
     <remove-project path="frameworks/opt/tv/tvsystem" />
     <remove-project path="frameworks/opt/vcard" />
-    <remove-project path="frameworks/proto_logging" />
     <remove-project path="frameworks/rs" />
     <remove-project path="frameworks/wilhelm" />
 
