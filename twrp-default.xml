@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="twrp-16.0"
+            fetch="https://github.com/TWRP-Test"/>
+
+    <!-- Replace AOSP projects with the TWRP-Test forks. -->
+    <remove-project name="android_bootable_recovery" />
+    <remove-project name="android_build" />
+    <remove-project name="android_build_soong" />
+    <remove-project name="LineageOS/android_external_exfatprogs" />
+    <remove-project name="LineageOS/android_external_freetype" />
+
+    <remove-project name="platform/external/icu" />
+    <remove-project name="platform/external/libvpx" />
+    <remove-project name="platform/external/libwebm" />
+    <remove-project name="platform/external/libchrome" />
+    <remove-project name="LineageOS/android_external_libncurses" />
+    <remove-project name="platform/external/libxml2" />
+    <remove-project name="platform/external/scrypt" />
+    <remove-project name="android_external_sqlite" />
+    <remove-project name="platform/external/ublksrv" />
+    <remove-project name="android_external_wpa_supplicant_8" />
+    <remove-project name="android_external_zstd" />
+    <remove-project name="android_frameworks_base" />
+    <remove-project name="platform/frameworks/hardware/interfaces" />
+    <remove-project name="android_hardware_interfaces"/>
+
+    <remove-project name="android_system_core" />
+
+    <remove-project name="android_system_keymaster" />
+    <remove-project name="android_system_libhidl" />
+    <remove-project name="android_system_libziparchive" />
+    <remove-project name="android_system_security" />
+    <remove-project name="android_system_sepolicy" />
+    <remove-project name="android_system_update_engine" />
+    <remove-project name="android_system_vold" />
+
+    <!-- TWRP recovery source. -->
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- LVGL source for gui2. -->
+    <project path="external/lvgl" name="android_external_lvgl" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- Codec and WebM muxer used by GUI2 screen recording. -->
+    <project path="external/libvpx" name="android_external_libvpx" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libwebm" name="android_external_libwebm" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- AOSP forks required for the recovery build. -->
+    <project path="build/make" name="android_build" remote="twrp-16.0" revision="twrp-16.0">
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+    <project path="build/soong" name="android_build_soong" remote="twrp-16.0" revision="twrp-16.0">
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+    <project path="external/exfatprogs" name="android_external_exfatprogs" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/freetype" name="android_external_freetype" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/icu" name="android_external_icu" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libchrome" name="android_external_libchrome" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libxml2" name="android_external_libxml2" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/scrypt" name="android_external_scrypt" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/sqlite" name="android_external_sqlite" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="twrp-16.0" revision="twrp-16.0" />
+    <project path="external/zstd" name="android_external_zstd" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="frameworks/base" name="android_frameworks_base" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0" />
+    <project path="system/core" name="android_system_core" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <project path="system/keymaster" name="android_system_keymaster" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/libhidl" name="android_system_libhidl" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/libziparchive" name="android_system_libziparchive" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/security" name="android_system_security" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/vold" name="android_system_vold" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- TWRP vendor build configuration. -->
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="twrp-16.0" revision="twrp-16.0" />
+
+    <!-- Include libmicrohttpd for TWRP -->
+    <project name="android_external_libmicrohttpd" path="external/libmicrohttpd" remote="twrp-16.0" revision="twrp-16.0" />
+
+    <!-- Include external/libncurses for bash and nano support -->
+    <project path="external/libncurses" name="android_external_libncurses" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- Include se_omapi for TWRP -->
+    <project name="android_se_omapi" path="external/se_omapi" remote="twrp-16.0" revision="twrp-16.0" />
+
+    <!-- Magisk prebuilts for image repacking and property tools. -->
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- Include android-17.0.0_r1 external/ublksrv for UBLK support -->
+    <project path="external/ublksrv" name="platform/external/ublksrv" remote="aosp" revision="refs/tags/android-17.0.0_r1" groups="pdk" />
+
+    <!-- Include phh's treble repo for lptools support -->
+    <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
+
+</manifest>
