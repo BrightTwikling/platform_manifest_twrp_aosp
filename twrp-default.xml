@@ -19,7 +19,6 @@
     <remove-project name="platform/external/scrypt" />
     <remove-project name="android_external_sqlite" />
     <remove-project name="platform/external/ublksrv" />
-    <remove-project name="android_external_wpa_supplicant_8" />
     <remove-project name="android_external_zstd" />
     <remove-project name="android_frameworks_base" />
     <remove-project name="platform/frameworks/hardware/interfaces" />
@@ -64,7 +63,6 @@
     <project path="external/libxml2" name="android_external_libxml2" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="external/scrypt" name="android_external_scrypt" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="twrp-16.0" revision="twrp-16.0"/>
-    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="twrp-16.0" revision="twrp-16.0" />
     <project path="external/zstd" name="android_external_zstd" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="frameworks/base" name="android_frameworks_base" remote="twrp-16.0" revision="twrp-16.0"/>
     <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
